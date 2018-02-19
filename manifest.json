@@ -1,0 +1,11 @@
+{
+ “manifest_version”: 2,
+“name”: “Common App”,
+ “description”: “This extension autofills your information into job
+ applications”: “1.0”,
+“page_action”: {
+ “default_icon”: “img.png”,
+ “default_popup”: “popup.html”,
+ “default_title”: “Common App for Jobs”
+ }
+}
