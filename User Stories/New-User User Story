@@ -1,0 +1,4 @@
+As a user without a LinkedIn, I would still like to use this application to apply for jobs.
+
+Our app will give users the option to create an account with their email. They can manually input their data for each field. 
+If someone inputs an invalid email or an already existing email on the app, the app will output an error message accordingly.
