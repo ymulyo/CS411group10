@@ -1,0 +1,5 @@
+As a user, I want to be able to use my existing LinkedIn account to import data into the database.
+
+Our app will give users the option to log in with LinkedIn, and then after they log in, it will ask them if they would like to 
+import their data or not. In the case that they choose to import their data, and the data imports into the wrong fields, they 
+can manually fix the errors. 
