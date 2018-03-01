@@ -1,0 +1,5 @@
+As a user, I want my data to be imported into a job application.
+
+Users can click on a button on our extension that will input their data into the appropriate fields. If there is a field that 
+is not in the database, users will have to manually input their data for that field.
+
