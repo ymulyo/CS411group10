@@ -1,0 +1,3 @@
+We chose to use Flask to connect Python and HTML so we could take the user input and use it to search through the API, and 
+then return the values obtained from the API onto the webpage. We considered using Javascript, but decided to use Python 
+because it is a language our group is more comfortable using for this part of the assignment. 
