@@ -23,7 +23,7 @@ def login():
         loc = request.form['nn']
     else:
         user = request.args.get('nm')
-        loc = request.form['nn']
+        loc = request.args.get('nn')
     body = '{ "keywords": "' + user + '", "location": "' + loc + '"}'
     connection.request('POST','/api/' + key, body, headers)
     response = connection.getresponse()
