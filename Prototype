@@ -1,3 +1,5 @@
-We chose to use Flask to connect Python and HTML so we could take the user input and use it to search through the API, and 
-then return the values obtained from the API onto the webpage. We considered using Javascript, but decided to use Python 
-because it is a language our group is more comfortable using for this part of the assignment. 
+We chose to use a micro Framework called Flask because it didn't use any special tools or libraries. We considered using Javascript, but decided to use Python because Flask could be imported to Python and everyone in the team was very comfortable with it as well. If needed, Flask can also support extensions that give application more features like upload handling, form validation, etc. that can be added later, so it was easy to integrate the two.
+
+We used HTML to create the webpage, that could take the user input and use it to search through the API and then return the values obtained from the API onto the webpage. It was simple, basic and you cannot go wrong with HTML especially as a beginner.
+
+We used JSON for browser-server communication because it uses attribute-value pairs and array data types, which is better in readability (great for beginners as well). There was a lot of information and documentation on our API website (Jooble) for JSON requests and API keys, so we didn't think about using anything else for now.
