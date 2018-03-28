@@ -1,3 +1,5 @@
+import config
+
 from flask import Flask, redirect, url_for, request
 app = Flask(__name__)
 
@@ -11,7 +13,7 @@ def success(name):
 @app.route('/login',methods = ['POST', 'GET'])
 def login():
     host = 'us.jooble.org'
-    key = 'e638b80e-d61b-45f8-9c19-97d37ac76e8e'
+    key = config.apiKey()
 
     connection = http.client.HTTPConnection(host)
     #request headers
