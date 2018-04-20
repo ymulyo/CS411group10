@@ -1,0 +1,31 @@
+For our application, we are using PyMongo, a tool used for working with MongoDB in Python.
+
+This is the code we plan on implementing to store values from our API into our database, and retrieving information from the database to supply to users.
+
+from flask import Flask
+from flask.ext.pymongo import PyMongo
+
+app = Flask(__name__)
+
+app.config['MONGO_DBNAME'] = 'connect_to_mongo'
+#app.config['MONGO_URI'] = 
+
+mongo = PyMongo(app)
+
+@app.route('/add')
+def add():
+	user = mongo.db.users
+	user.insert({'company' : 'Google', ‘position’: ‘Software Engineer’, ‘location’: ‘Boston’})
+	return 'Added User!'
+
+@app.route('/find')
+def find():
+	user = mongo.db.users
+	found = user.find_one({company' : 'Google'})
+	return 'You found ' + found['company']
+
+if __name__ == '__main__':
+	app.run(debug=True)
+
+As we can see, the JSON schema will follow the format of {'company' , ‘position’, ‘location’} but we will use the company name as the key. The only required field is the company name. 
+
