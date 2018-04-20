@@ -1,6 +1,7 @@
 For our application, we are using PyMongo, a tool used for working with MongoDB in Python.
 
-This is the code we plan on implementing to store values from our API into our database, and retrieving information from the database to supply to users.
+This is the code we plan on implementing to store values from our API into our database, and retrieving information from the 
+database to supply to users.
 
 from flask import Flask
 from flask.ext.pymongo import PyMongo
@@ -27,5 +28,6 @@ def find():
 if __name__ == '__main__':
 	app.run(debug=True)
 
-As we can see, the JSON schema will follow the format of {'company' , ‘position’, ‘location’} but we will use the company name as the key. The only required field is the company name. 
+As we can see, the JSON schema will follow the format of {'company' , ‘position’, ‘location’} but we will use the company 
+name as the key. The only required field is the company name. 
 
