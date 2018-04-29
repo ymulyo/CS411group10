@@ -1,3 +1,9 @@
+*, :before, :after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 html {
   min-height: 100%;
   margin: 0;
@@ -19,7 +25,7 @@ body {
     font-size: 100px;
     position: absolute;
     margin-top: -25px;
-    margin-left: 500px;
+    margin-left: 475px;
     margin-right: 50%;
     vertical-align: middle
 }
@@ -30,7 +36,7 @@ input[name="keyword"] {
     float: center;
     position: absolute;
     margin-top: 250px;
-    margin-left: 450px;
+    margin-left: 425px;
     margin-bottom: 50%;
     margin-right: 50%;
     vertical-align: middle
@@ -44,7 +50,7 @@ input[name="location"] {
     float: center;
     position: absolute;
     margin-top: 325px;
-    margin-left: 450px;
+    margin-left: 425px;
     margin-bottom: 100px;
     margin-right: 50%;
     vertical-align: middle
@@ -57,7 +63,7 @@ button[type="submit"] {
     float: center;
     position: relative;
     margin-top: 400px;
-    margin-left: 700px;
+    margin-left: 675px;
     margin-bottom: 25px;
     margin-right: 50%;
     vertical-align: middle
@@ -81,6 +87,9 @@ button[type="submit"] {
     margin: 30px; 
     background-color: green;
     float: left;
+    font-size: 100px;
+    text-align:center;
+    padding:35px;
     #align: center;
 }
 
