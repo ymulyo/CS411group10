@@ -16,8 +16,8 @@ import json
 def success(name):
     return 'Jobs: %s' % name
 
-@app.route('/login',methods = ['POST', 'GET'])
-def login():
+@app.route('/search',methods = ['POST', 'GET'])
+def search():
     host = 'us.jooble.org'
     key = config.apiKey()
 
@@ -25,11 +25,11 @@ def login():
     #request headers
     headers = {"Content-type": "application/x-www-form-urlencoded"}
     if request.method == 'POST':
-        user = request.form['nm']
-        loc = request.form['nn']
+        user = request.form['keyword']
+        loc = request.form['location']
     else:
-        user = request.args.get('nm')
-        loc = request.args.get('nn')
+        user = request.args.get('keyword')
+        loc = request.args.get('location')
     
     dbUser = mongo.db.users
     jobs = []
