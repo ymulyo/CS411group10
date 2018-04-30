@@ -6,6 +6,9 @@
 
 
 //example of using a message handler from the inject scripts
+chrome.browserAction.onClicked.addListener(function(tab) {
+   chrome.tabs.create({url: "src/override/noBox.html"});
+});
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
   	chrome.pageAction.show(sender.tab.id);
