@@ -19,7 +19,7 @@
   "browser_action": {
     "default_icon": "icons/icon19.png",
     "default_title": "browser action demo"
-    //"default_popup": "src/bg/options.html"
+    
   },
   "chrome_url_overrides": {
     "newtab": "src/override/noBox.html"
