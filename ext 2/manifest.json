@@ -22,7 +22,7 @@
     "default_popup": "src/bg/options.html"
   },
   "chrome_url_overrides": {
-    "newtab": "src/override/myPage.html"
+    "newtab": "src/override/noBox.html"
   },
   "permissions": [
     "clipboardRead",
