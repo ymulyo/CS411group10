@@ -1,6 +1,11 @@
 # CS411group10
 CS411 project for group 10
 
+Directions to find files - 
+Our main folder is named "ext 2", inside that is all the code required for the final app. 
+We have a lot of "testing folders" please ignore those.
+The final project report is in the main page because the folder as a whole is required to be loaded into the extension area for google chrome, and cannot be tampered with. 
+
 Pitch Ideas:
 
 Idea #1: Study Partner Finder App
